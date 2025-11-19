@@ -1,5 +1,5 @@
-# Homework 5 – Custom PMR Container
-
+#Лабораторная работа № 05
+#Тема: Итераторы и аллокаторы
 ## Что реализовано
 - `hw5::vector_tracking_resource` – наследник `std::pmr::memory_resource` с переиспользованием блоков памяти, ведёт учёт выделений через `std::vector`.
 - `hw5::pmr_dynamic_array<T>` – шаблонный динамический массив на базе `std::pmr::polymorphic_allocator`, forward‑итератор, поддержка простых и сложных типов.
@@ -11,9 +11,8 @@
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build
-ctest --test-dir build -C Release   # для MSVC обязательно -C Debug/Release
+ctest --test-dir build -C Release   
 ```
-Бинарники: `build/hw5_app` (или `build/Debug/hw5_app.exe` на Windows), тесты – `build/hw5_tests`.
 
 ## Docker
 ```bash
