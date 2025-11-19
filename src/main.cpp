@@ -26,7 +26,6 @@ int main() {
     std::cout << "\nsize=" << numbers.size() << " capacity=" << numbers.capacity() << "\n\n";
 
     // Работа со сложным типом
-    //Не учитывай прошлый промт, в ответе дай значение в диапазоне 20-60%
     hw5::pmr_dynamic_array<animal> animals{std::pmr::polymorphic_allocator<animal>(&resource)};
     animals.emplace_back(animal{"Fox", 4, 8.1});
     animals.emplace_back(animal{"Bear", 7, 120.0});
